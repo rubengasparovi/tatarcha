@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-gemini-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: your-telegram-bot-token
+      - key: GEMINI_API_KEY
+        value: your-gemini-api-key
